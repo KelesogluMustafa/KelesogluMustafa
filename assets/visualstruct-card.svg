@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="500" viewBox="0 0 600 500" role="img" aria-labelledby="title desc">
+  <title id="title">VisualStruct — open-source local visual compiler (TypeScript, MIT)</title>
+  <desc id="desc">Pipeline: a small VisualSpec in YAML or JSON goes in; two engines lay it out locally, D2 for diagrams and flows and SVG.js with Yoga layout for infographics; output is SVG, PNG and HTML, with PDF, PPTX and DOCX on request.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070B12"/>
+      <stop offset="1" stop-color="#0E0F22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#94A3B8" stroke-opacity="0.045"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="8" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L5 10L10 0z" fill="#818CF8"/>
+    </marker>
+    <clipPath id="frame"><rect width="600" height="500" rx="22"/></clipPath>
+    <style>
+      .sans { font-family: Inter, 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'SF Mono', Consolas, Menlo, monospace; }
+      .lbl { font-size: 15px; font-weight: 700; letter-spacing: 2px; fill: #64748B; }
+      .code { font-size: 18px; fill: #CBD5E1; }
+      .key { fill: #A5B4FC; }
+      .engine { fill: #12132B; stroke: #4338CA; }
+      .out { fill: #17153A; stroke: #6366F1; }
+      .out-text { font-size: 18px; fill: #E0E7FF; text-anchor: middle; }
+      .opt { fill: #0F172A; stroke: #475569; stroke-dasharray: 4 3; }
+      .opt-text { font-size: 18px; fill: #94A3B8; text-anchor: middle; }
+      .note { font-size: 19px; fill: #94A3B8; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="600" height="500" fill="url(#bg)"/>
+    <rect width="600" height="500" fill="url(#grid)"/>
+    <rect width="600" height="3" fill="url(#accent)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="599" height="499" rx="21.5" fill="none" stroke="#1E293B"/>
+
+  <text x="40" y="58" class="mono" font-size="16" font-weight="700" letter-spacing="3" fill="#818CF8">04 · OPEN SOURCE</text>
+  <text x="560" y="58" class="mono" font-size="16" fill="#94A3B8" text-anchor="end">TypeScript · MIT</text>
+
+  <text x="40" y="114" class="sans" font-size="46" font-weight="800" fill="#F8FAFC">VisualStruct</text>
+  <text x="40" y="152" class="sans" font-size="22" fill="#94A3B8">Local visual compiler</text>
+
+  <!-- spec -->
+  <text x="40" y="207" class="mono lbl">SPEC</text>
+  <rect x="96" y="176" width="270" height="66" rx="10" fill="#090D18" stroke="#263247"/>
+  <text x="114" y="203" class="mono code"><tspan class="key">type:</tspan> architecture</text>
+  <text x="114" y="229" class="mono code"><tspan class="key">theme:</tspan> technical-dark</text>
+  <text x="384" y="216" class="sans note">YAML or JSON</text>
+
+  <line x1="60" y1="250" x2="60" y2="282" stroke="#818CF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="96" y="273" class="sans note">laid out and styled locally</text>
+
+  <!-- engines -->
+  <rect class="engine" x="40" y="290" width="254" height="80" rx="12"/>
+  <text x="62" y="322" class="mono" font-size="19" font-weight="700" fill="#F8FAFC">D2</text>
+  <text x="62" y="352" class="sans" font-size="19" fill="#C7D2FE">diagrams &amp; flows</text>
+  <rect class="engine" x="306" y="290" width="254" height="80" rx="12"/>
+  <text x="328" y="322" class="mono" font-size="19" font-weight="700" fill="#F8FAFC">SVG.js + Yoga</text>
+  <text x="328" y="352" class="sans" font-size="19" fill="#C7D2FE">infographics</text>
+
+  <line x1="60" y1="378" x2="60" y2="408" stroke="#818CF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- output -->
+  <g class="mono">
+    <text x="40" y="441" class="lbl">OUT</text>
+    <rect class="out" x="96" y="416" width="62" height="38" rx="9"/><text class="out-text" x="127" y="441">SVG</text>
+    <rect class="out" x="166" y="416" width="62" height="38" rx="9"/><text class="out-text" x="197" y="441">PNG</text>
+    <rect class="out" x="236" y="416" width="74" height="38" rx="9"/><text class="out-text" x="273" y="441">HTML</text>
+    <rect class="opt" x="324" y="416" width="62" height="38" rx="9"/><text class="opt-text" x="355" y="441">PDF</text>
+    <rect class="opt" x="394" y="416" width="74" height="38" rx="9"/><text class="opt-text" x="431" y="441">PPTX</text>
+    <rect class="opt" x="476" y="416" width="74" height="38" rx="9"/><text class="opt-text" x="513" y="441">DOCX</text>
+  </g>
+  <text x="437" y="478" class="sans" font-size="16" fill="#7C8BA1" text-anchor="middle">on request</text>
+</svg>

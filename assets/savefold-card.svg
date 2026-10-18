@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">SaveFold — SaaS web product, live at savefold.site</title>
+  <desc id="desc">Save links from anywhere and find them again when they matter. Flow: Save (web app and PWA, share sheet, browser extension), Organize (collections, topics, tags), Find (search, filters, resurface), Act (reminders, share links, export). Built with Node.js, Express, MySQL and a PWA, with automated tests, multilingual UI and a staging-to-production workflow.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070B12"/>
+      <stop offset="0.6" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#0D1626"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#94A3B8" stroke-opacity="0.045"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#22D3EE"/>
+    </marker>
+    <clipPath id="frame"><rect width="1200" height="600" rx="24"/></clipPath>
+    <style>
+      .sans { font-family: Inter, 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'SF Mono', Consolas, Menlo, monospace; }
+      .stage { fill: #0F172A; stroke: #1E3A4C; }
+      .stage-label { font-size: 19px; font-weight: 700; letter-spacing: 2px; fill: #22D3EE; }
+      .item { font-size: 25px; fill: #CBD5E1; }
+      .item-on { fill: #E2E8F0; }
+      .chip { fill: #0F172A; stroke: #263247; }
+      .chip-text { font-size: 20px; fill: #CBD5E1; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="600" fill="url(#bg)"/>
+    <rect width="1200" height="600" fill="url(#grid)"/>
+    <circle cx="1020" cy="40" r="300" fill="url(#glow)"/>
+    <rect width="1200" height="3" fill="url(#accent)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="599" rx="23.5" fill="none" stroke="#1E293B"/>
+
+  <!-- header -->
+  <text x="64" y="74" class="mono" font-size="18" font-weight="700" letter-spacing="3" fill="#22D3EE">01 · FEATURED PRODUCT</text>
+
+  <g>
+    <rect x="876" y="46" width="260" height="44" rx="22" fill="#052E1B" stroke="#166534"/>
+    <circle cx="902" cy="68" r="6" fill="#22C55E"/>
+    <text x="920" y="76" class="sans" font-size="21" font-weight="600" fill="#86EFAC">Live · savefold.site</text>
+  </g>
+
+  <!-- folded-card logo mark -->
+  <g transform="translate(64 108) scale(1.143)">
+    <rect width="56" height="56" rx="14" fill="#0E2A36" stroke="#155E75"/>
+    <path d="M16 18h16l8 8v14a2 2 0 0 1-2 2H16a2 2 0 0 1-2-2V20a2 2 0 0 1 2-2z" fill="none" stroke="#22D3EE" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M32 18v8h8" fill="none" stroke="#22D3EE" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+  <text x="148" y="162" class="sans" font-size="64" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">SaveFold</text>
+
+  <text x="64" y="218" class="sans" font-size="27" font-weight="600" fill="#94A3B8">SaaS web product</text>
+  <text x="64" y="262" class="sans" font-size="27" fill="#CBD5E1">Save links from anywhere. Find them again when they matter.</text>
+
+  <!-- product flow -->
+  <g class="sans">
+    <rect class="stage" x="64" y="300" width="244" height="180" rx="16"/>
+    <text x="88" y="340" class="mono stage-label">01 SAVE</text>
+    <text x="88" y="384" class="item">Web &amp; PWA</text>
+    <text x="88" y="420" class="item">Share sheet</text>
+    <text x="88" y="456" class="item">Extension</text>
+
+    <rect class="stage" x="340" y="300" width="244" height="180" rx="16"/>
+    <text x="364" y="340" class="mono stage-label">02 ORGANIZE</text>
+    <text x="364" y="384" class="item">Collections</text>
+    <text x="364" y="420" class="item">Topics</text>
+    <text x="364" y="456" class="item">Tags</text>
+
+    <rect class="stage" x="616" y="300" width="244" height="180" rx="16"/>
+    <text x="640" y="340" class="mono stage-label">03 FIND</text>
+    <text x="640" y="384" class="item">Search</text>
+    <text x="640" y="420" class="item">Filters</text>
+    <text x="640" y="456" class="item">Resurface</text>
+
+    <rect x="892" y="300" width="244" height="180" rx="16" fill="#0B2530" stroke="#0E7490"/>
+    <text x="916" y="340" class="mono stage-label">04 ACT</text>
+    <text x="916" y="384" class="item item-on">Reminders</text>
+    <text x="916" y="420" class="item item-on">Share links</text>
+    <text x="916" y="456" class="item item-on">Export</text>
+
+    <g stroke="#22D3EE" stroke-width="2.5" marker-end="url(#arrow)">
+      <line x1="310" y1="390" x2="336" y2="390"/>
+      <line x1="586" y1="390" x2="612" y2="390"/>
+      <line x1="862" y1="390" x2="888" y2="390"/>
+    </g>
+  </g>
+
+  <!-- stack -->
+  <g class="mono">
+    <rect class="chip" x="64" y="512" width="112" height="44" rx="12"/>
+    <text class="chip-text" x="120" y="541">Node.js</text>
+    <rect class="chip" x="186" y="512" width="112" height="44" rx="12"/>
+    <text class="chip-text" x="242" y="541">Express</text>
+    <rect class="chip" x="308" y="512" width="96" height="44" rx="12"/>
+    <text class="chip-text" x="356" y="541">MySQL</text>
+    <rect class="chip" x="414" y="512" width="72" height="44" rx="12"/>
+    <text class="chip-text" x="450" y="541">PWA</text>
+  </g>
+
+  <!-- durable engineering signals -->
+  <g class="sans" font-size="20" fill="#94A3B8">
+    <text x="1136" y="541" text-anchor="end">Automated tests <tspan fill="#475569">·</tspan> Multilingual <tspan fill="#475569">·</tspan> Staging <tspan fill="#22D3EE">→</tspan> Production</text>
+  </g>
+</svg>
